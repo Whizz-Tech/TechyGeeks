@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official | TechyGeeks </title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/86578ad3c8.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+   
+    <div class="navbar">
+        <div class="container">
+
+            <a class="logo" href="#">Techy<span>Geeks</span></a>
+            
+            <div id="mobile-cta" class="mobile-menu"><i class="fa-solid fa-list"></i></div>
+
+            <nav>
+                <div id="mobile-exit" class="mobile-menu-exit"><i class="fa-solid fa-xmark"></i></div>
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>               
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>   
+                </ul>               
+            </nav>
+
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Its Techy &amp; Geeks</p>
+                <h1>Influencing The NEXT GEN Using TECHOLOGY</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <i class="fa-solid fa-video"></i> Watch a Video
+                    </a>
+                </div>
+            </div>
+                <img src="Images/Calendar.svg" alt="Illustrations" class="hero-img">
+        </div>
+    </section>
+
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions Upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other Awesome Features</li>
+            </ul>
+
+            <img src="Images/remotely.svg" alt="Man Holding Phone">
+
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="Images/Chukwuemeka.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Ipsa velit sapiente corrupti impedit, 
+                        blanditiis a sed magnam! Similique, iure nostrum, eaque temporibus mollitia, 
+                        non quam iste atque fugiat ad voluptatum!"</blockquote>
+                    <cite>Chukwuemeka Onyekachi - CEO</cite>
+                </li>
+
+                <li>
+                    <img src="Images/Daddy.png" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Ipsa velit sapiente corrupti impedit, 
+                        blanditiis a sed magnam! Similique, iure nostrum, eaque temporibus mollitia, 
+                        non quam iste atque fugiat ad voluptatum!"</blockquote>
+                    <cite>Micheal Obasi - Asst.Manager</cite>
+                </li>
+
+                <li>
+                    <img src="Images/Rev.png" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Ipsa velit sapiente corrupti impedit, 
+                        blanditiis a sed magnam! Similique, iure nostrum, eaque temporibus mollitia, 
+                        non quam iste atque fugiat ad voluptatum!"</blockquote>
+                    <cite>Emmanuel Awazie - General Manager</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message" >
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8859676532606!2d3.3887158146365652!3d6.536082724830592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d1069871633%3A0xfb6fcbce6c6d9b15!2s13%20Jossy%20Castro%20Street%2C%20Somolu%20102216%2C%20Lagos!5e0!3m2!1sen!2sng!4v1659656813658!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    }) 
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    }) 
+
+</script>
+
+
+</body>
+</html>
